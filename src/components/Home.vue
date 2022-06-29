@@ -1,0 +1,102 @@
+<template>
+  <el-container class="home-container">
+    <!-- 头部区域 -->
+    <el-header>
+      <div>
+        <img src="../assets/logo.png" style="width: 150px;height: 150px;margin-left: 28px;margin-top: 10px"/>
+        <span style="margin-left: 30px">Vue + SpringBoot + MyBatis + MySQL案例</span>
+      </div>
+      <div>
+        <el-button type="info">
+          <i class="el-icon-s-custom"></i>
+          {{ adminName }}
+        </el-button>
+        <el-button type="info" @click="logout">
+          <i class="el-icon-s-promotion"></i>
+          退出
+        </el-button>
+      </div>
+    </el-header>
+    <!-- 主体区域 -->
+    <el-container>
+      <!-- 左侧边栏-->
+      <el-aside width="200px">
+        <el-menu
+          background-color="#545c64"
+          text-color="#fff"
+          active-text-color="#409EFF" router default-active="/home">
+          <el-menu-item index="/home">
+            <i class="el-icon-s-home"></i>
+            <span slot="title">首页</span>
+          </el-menu-item>
+          <el-menu-item index="/info">
+            <i class="el-icon-help"></i>
+            <span slot="title">查看个人信息</span>
+          </el-menu-item>
+          <el-menu-item index="/setPassword">
+            <i class="el-icon-edit"></i>
+            <span slot="title">修改登录密码</span>
+          </el-menu-item>
+          <el-menu-item index="/news">
+            <i class="el-icon-files"></i>
+            <span slot="title">新闻信息管理</span>
+          </el-menu-item>
+        </el-menu>
+      </el-aside>
+      <!-- 右侧内容主体区域 -->
+      <el-main>
+        <!-- 路由占位符 -->
+        <router-view></router-view>
+      </el-main>
+    </el-container>
+  </el-container>
+</template>
+
+<script>
+export default {
+  name: 'Home',
+  data () {
+    return {
+      adminName: sessionStorage.getItem('AdminName')
+    }
+  },
+  methods: {
+    logout () {
+      window.sessionStorage.clear()
+      this.$router.push('/login')
+    }
+  }
+}
+</script>
+
+<style lang="less" scoped>
+  .home-container{
+    height: 100%;
+  }
+  .el-header{
+    background-color: #373D41;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding-left: 0;
+    font-size: 20px;
+    >div{
+      display: flex;
+      align-items: center;
+      span{
+        margin-left: 15px;
+      }
+    }
+    img{
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .el-aside{
+    background-color: #333744;
+  }
+  .el-main{
+    background-color: #eaedf1;
+  }
+</style>
