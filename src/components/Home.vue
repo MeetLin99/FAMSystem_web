@@ -3,8 +3,8 @@
     <!-- 头部区域 -->
     <el-header>
       <div>
-        <img src="../assets/logo.png" style="width: 150px;height: 150px;margin-left: 28px;margin-top: 10px"/>
-        <span style="margin-left: 30px">Vue + SpringBoot + MyBatis + MySQL案例</span>
+        <img src="../assets/logo.png" style="width: 170px;height: 150px;margin-left: 28px;margin-top: 10px"/>
+        <span style="margin-left: 30px">超市库存管理系统</span>
       </div>
       <div>
         <el-button type="info">
@@ -41,6 +41,10 @@
             <i class="el-icon-files"></i>
             <span slot="title">新闻信息管理</span>
           </el-menu-item>
+          <el-menu-item index="/Stock">
+            <i class="el-icon-box"></i>
+            <span slot="title">库存信息管理</span>
+          </el-menu-item>
         </el-menu>
       </el-aside>
       <!-- 右侧内容主体区域 -->
@@ -69,6 +73,7 @@ export default {
 }
 </script>
 
+<!-- 路由占位符 -->
 <style lang="less" scoped>
   .home-container{
     height: 100%;
