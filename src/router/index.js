@@ -6,7 +6,7 @@ import Welcome from '../components/Welcome.vue'
 import Info from '../components/Info.vue'
 import SetPassword from '../components/SetPassword.vue'
 import News from '../components/News.vue'
-import Student from '../components/Stock.vue'
+import Stock from '../components/Stock.vue'
 
 Vue.use(VueRouter)
 const routes = [
@@ -21,7 +21,7 @@ const routes = [
       { path: '/info', component: Info },
       { path: '/setPassword', component: SetPassword },
       { path: '/news', component: News },
-      { path: '/Stock', component: Student }
+      { path: '/stock', component: Stock }
     ]
   }
 ]

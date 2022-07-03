@@ -198,7 +198,7 @@ export default {
       },
       updateStockInfo: {
         stockno: '',
-        gname: '',
+        // gname: '',
         category: '',
         ammount: ''
       },
@@ -300,7 +300,7 @@ export default {
     },
     updateStock () {
       this.updateStockInfo.stockno = this.getStockByIdInfo.stockno
-      this.updateStockInfo.gname = this.StockById.gname
+      // this.updateStockInfo.gname = this.StockById.gname
       this.updateStockInfo.category = this.StockById.category
       this.updateStockInfo.ammount = this.StockById.ammount
       // 发送请求
