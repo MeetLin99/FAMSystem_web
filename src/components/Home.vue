@@ -45,6 +45,10 @@
             <i class="el-icon-box"></i>
             <span slot="title">库存信息管理</span>
           </el-menu-item>
+          <el-menu-item index="/stockchart">
+            <i class="el-icon-box"></i>
+            <span slot="title">库存统计图</span>
+          </el-menu-item>
         </el-menu>
       </el-aside>
       <!-- 右侧内容主体区域 -->

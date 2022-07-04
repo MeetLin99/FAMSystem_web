@@ -7,6 +7,7 @@ import Info from '../components/Info.vue'
 import SetPassword from '../components/SetPassword.vue'
 import News from '../components/News.vue'
 import Stock from '../components/Stock.vue'
+import Stockchart from '../components/Stockchart.vue'
 
 Vue.use(VueRouter)
 const routes = [
@@ -21,7 +22,8 @@ const routes = [
       { path: '/info', component: Info },
       { path: '/setPassword', component: SetPassword },
       { path: '/news', component: News },
-      { path: '/stock', component: Stock }
+      { path: '/stock', component: Stock },
+      { path: '/stockchart', component: Stockchart }
     ]
   }
 ]
