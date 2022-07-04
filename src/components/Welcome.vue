@@ -1,6 +1,6 @@
 <template>
     <div>
-      <span class="welcome">欢迎使用本学习案例，祝学习开心！</span>
+      <span class="welcome">欢迎来到我们的超市，请放心选购！</span>
       <!-- <el-calendar v-model="value">
         <template
           slot="dateCell"
@@ -10,7 +10,7 @@
           </p>
         </template>
       </el-calendar> -->
-      <img src="../assets/info.png"/>
+      <img src="../assets/info.png" height="100%" width="100%" />
     </div>
 </template>
 

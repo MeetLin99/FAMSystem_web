@@ -37,10 +37,14 @@
             <i class="el-icon-edit"></i>
             <span slot="title">修改登录密码</span>
           </el-menu-item>
-          <el-menu-item index="/news">
+          <el-menu-item index="/goods">
             <i class="el-icon-files"></i>
-            <span slot="title">新闻信息管理</span>
+            <span slot="title">商品管理</span>
           </el-menu-item>
+            <el-menu-item index="/admin">
+            <i class="el-icon-files"></i>
+            <span slot="title">用户信息管理</span>
+            </el-menu-item>
           <el-menu-item index="/stock">
             <i class="el-icon-box"></i>
             <span slot="title">库存信息管理</span>

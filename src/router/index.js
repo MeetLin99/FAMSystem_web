@@ -5,9 +5,10 @@ import Home from '../components/Home.vue'
 import Welcome from '../components/Welcome.vue'
 import Info from '../components/Info.vue'
 import SetPassword from '../components/SetPassword.vue'
-import News from '../components/News.vue'
 import Stock from '../components/Stock.vue'
 import Stockchart from '../components/Stockchart.vue'
+import Goods from '../components/Goods.vue'
+import Admin from '../components/Admin.vue'
 
 Vue.use(VueRouter)
 const routes = [
@@ -21,9 +22,10 @@ const routes = [
       { path: '/welcome', component: Welcome },
       { path: '/info', component: Info },
       { path: '/setPassword', component: SetPassword },
-      { path: '/news', component: News },
       { path: '/stock', component: Stock },
-      { path: '/stockchart', component: Stockchart }
+      { path: '/stockchart', component: Stockchart },
+      { path: '/goods', component: Goods },
+      { path: '/admin', component: Admin },
     ]
   }
 ]
