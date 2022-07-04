@@ -42,7 +42,7 @@
             <span slot="title">商品管理</span>
           </el-menu-item>
             <el-menu-item index="/admin">
-            <i class="el-icon-files"></i>
+            <i class="el-icon-user"></i>
             <span slot="title">用户信息管理</span>
             </el-menu-item>
           <el-menu-item index="/stock">
@@ -50,8 +50,12 @@
             <span slot="title">库存信息管理</span>
           </el-menu-item>
           <el-menu-item index="/stockchart">
-            <i class="el-icon-box"></i>
+            <i class="el-icon-pie-chart"></i>
             <span slot="title">库存统计图</span>
+          </el-menu-item>
+          <el-menu-item index="/adv">
+            <i class="el-icon-coordinate"></i>
+            <span slot="title">贪吃蛇大作战</span>
           </el-menu-item>
         </el-menu>
       </el-aside>

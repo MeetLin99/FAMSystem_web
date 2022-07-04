@@ -9,6 +9,7 @@ import Stock from '../components/Stock.vue'
 import Stockchart from '../components/Stockchart.vue'
 import Goods from '../components/Goods.vue'
 import Admin from '../components/Admin.vue'
+import Adv from '../components/Adv.vue'
 
 Vue.use(VueRouter)
 const routes = [
@@ -26,6 +27,7 @@ const routes = [
       { path: '/stockchart', component: Stockchart },
       { path: '/goods', component: Goods },
       { path: '/admin', component: Admin },
+      { path: '/adv', component: Adv},
     ]
   }
 ]
