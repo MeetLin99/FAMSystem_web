@@ -3,7 +3,7 @@
     <!-- 头部区域 -->
     <el-header>
       <div>
-        <img src="../assets/logo.png" style="width: 170px;height: 150px;margin-left: 28px;margin-top: 10px"/>
+        <img src="../assets/logo.png" style="width: 170px;height: 150px;margin-left: 28px;margin-top: 10px" />
         <span style="margin-left: 30px">超市库存管理系统</span>
       </div>
       <div>
@@ -21,10 +21,7 @@
     <el-container>
       <!-- 左侧边栏-->
       <el-aside width="200px">
-        <el-menu
-          background-color="#545c64"
-          text-color="#fff"
-          active-text-color="#409EFF" router default-active="/home">
+        <el-menu background-color="#545c64" text-color="#fff" active-text-color="#409EFF" router default-active="/home">
           <el-menu-item index="/home">
             <i class="el-icon-s-home"></i>
             <span slot="title">首页</span>
@@ -37,14 +34,18 @@
             <i class="el-icon-edit"></i>
             <span slot="title">修改登录密码</span>
           </el-menu-item>
+          <el-menu-item index="/admin">
+            <i class="el-icon-user"></i>
+            <span slot="title">用户信息管理</span>
+          </el-menu-item>
           <el-menu-item index="/goods">
             <i class="el-icon-files"></i>
             <span slot="title">商品管理</span>
           </el-menu-item>
-            <el-menu-item index="/admin">
-            <i class="el-icon-user"></i>
-            <span slot="title">用户信息管理</span>
-            </el-menu-item>
+          <el-menu-item index="/vendor">
+            <i class="el-icon-truck"></i>
+            <span slot="title">供应商管理</span>
+          </el-menu-item>
           <el-menu-item index="/stock">
             <i class="el-icon-box"></i>
             <span slot="title">库存信息管理</span>
@@ -69,28 +70,29 @@
 </template>
 
 <script>
-export default {
-  name: 'Home',
-  data () {
-    return {
-      adminName: sessionStorage.getItem('AdminName')
-    }
-  },
-  methods: {
-    logout () {
-      window.sessionStorage.clear()
-      this.$router.push('/login')
+  export default {
+    name: 'Home',
+    data() {
+      return {
+        adminName: sessionStorage.getItem('AdminName')
+      }
+    },
+    methods: {
+      logout() {
+        window.sessionStorage.clear()
+        this.$router.push('/login')
+      }
     }
   }
-}
 </script>
 
 <!-- 路由占位符 -->
 <style lang="less" scoped>
-  .home-container{
+  .home-container {
     height: 100%;
   }
-  .el-header{
+
+  .el-header {
     background-color: #373D41;
     display: flex;
     justify-content: space-between;
@@ -98,22 +100,27 @@ export default {
     color: #fff;
     padding-left: 0;
     font-size: 20px;
-    >div{
+
+    >div {
       display: flex;
       align-items: center;
-      span{
+
+      span {
         margin-left: 15px;
       }
     }
-    img{
+
+    img {
       width: 100px;
       height: 100px;
     }
   }
-  .el-aside{
+
+  .el-aside {
     background-color: #333744;
   }
-  .el-main{
+
+  .el-main {
     background-color: #eaedf1;
   }
 </style>
