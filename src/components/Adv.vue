@@ -48,7 +48,6 @@
     <div class="login" v-if="showLogin">
       <!-- <div class="title">贪吃蛇大作战</div> -->
       <el-form label-width="500px">
-      <el-form-item label="欢迎挑战贪吃蛇游戏!"></el-form-item>
       </el-form>
       <el-form
         ref="form"
@@ -59,7 +58,7 @@
       >
 
         <el-form-item label="昵称" prop="name">
-          <el-input v-model="form.name" placeholder="请输入昵称"></el-input>
+          <el-input v-model="form.name" placeholder="请输入昵称" ></el-input>
         </el-form-item>
       <el-button type="primary" @click="active" :disabled="btnState == false">开始游戏</el-button>
       </el-form>
@@ -328,7 +327,7 @@ export default {
 }
 .snake-grassland {
   position: relative;
-  background-color: #52af4a;
+  background-color: #b3db61;
   width: 500px;
   height: 500px;
 }
@@ -365,13 +364,10 @@ export default {
 
 .login {
   /* position: absolute; */
-  width: 1000px;
+  width: 750px;
   height: 500px;
-  /* background: linear-gradient(#d5ddbb, transparent) no-repeat,
-    url("../assets/adv.png") no-repeat; */
-  background:url("../assets/logo.png") no-repeat;
-  background-size: auto 500px, 1000px 500px;
-  left: 520px;
+  background:url("../assets/login3.png") no-repeat;
+  /* left: 520px; */
 }
 .ruleForm {
   padding: 180px 60px 20px;

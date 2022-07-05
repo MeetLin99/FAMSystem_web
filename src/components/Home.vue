@@ -21,7 +21,7 @@
     <el-container>
       <!-- 左侧边栏-->
       <el-aside width="200px">
-        <el-menu background-color="#545c64" text-color="#fff" active-text-color="#409EFF" router default-active="/home">
+        <el-menu background-color="#fff" text-color="#000" active-text-color="#409EFF" router default-active="/home">
           <el-menu-item index="/home">
             <i class="el-icon-s-home"></i>
             <span slot="title">首页</span>
@@ -93,13 +93,14 @@
   }
 
   .el-header {
-    background-color: #373D41;
+    background-color: #0665d0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #fff;
     padding-left: 0;
     font-size: 20px;
+    font-family: "微软雅黑";
 
     >div {
       display: flex;
@@ -117,10 +118,31 @@
   }
 
   .el-aside {
-    background-color: #333744;
+    background-color: #e1effe;
+    font-family: "微软雅黑";
+      display: inline-block;
+      padding: .5rem .625rem;
+      margin: 2px 0;
   }
 
   .el-main {
     background-color: #eaedf1;
+  }
+
+  .el-button {
+    color: #1c242c;
+    background-color: #f2f6fc;
+    border: none;
+    font-size: 14px;
+
+    &:hover {
+      color: #2483ff;
+      background-color: rgb(242, 246, 252);
+    }
+
+    &:active {
+      color: #2483ff;
+      background-color: rgb(242, 246, 252);
+    }
   }
 </style>
