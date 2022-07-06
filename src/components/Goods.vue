@@ -5,7 +5,7 @@
       <el-breadcrumb-item :to="{ path: '/home' }">
         <i class="el-icon-s-home"></i>首页
       </el-breadcrumb-item>
-      <el-breadcrumb-item>商品信息管理</el-breadcrumb-item>
+      <el-breadcrumb-item>在售商品管理</el-breadcrumb-item>
     </el-breadcrumb>
     <!-- 设置分割线 -->
     <el-divider></el-divider>

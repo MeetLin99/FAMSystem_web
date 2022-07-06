@@ -40,7 +40,7 @@
           </el-menu-item>
           <el-menu-item index="/goods">
             <i class="el-icon-files"></i>
-            <span slot="title">商品管理</span>
+            <span slot="title">在售商品管理</span>
           </el-menu-item>
           <el-menu-item index="/vendor">
             <i class="el-icon-truck"></i>

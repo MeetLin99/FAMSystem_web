@@ -35,8 +35,13 @@
              v-if="show">
            </el-table-column>
            <el-table-column
+             prop="adminSex"
+             label="用户性别"
+             align="center">
+           </el-table-column>
+           <el-table-column
              prop="adminStatus"
-             label="登录状态"
+             label="用户密码状态"
              align="center">
            </el-table-column>
            <el-table-column
